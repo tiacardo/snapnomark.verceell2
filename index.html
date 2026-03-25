@@ -4,7 +4,7 @@
     <!-- COLOQUE A META TAG DA MONETAG ABAIXO DESTA LINHA PARA VERIFICAR -->
     <meta name="monetag" content="SUA_TAG_AQUI">
 
-    <!-- 1. GOOGLE ANALYTICS -->
+    <!-- 1. GOOGLE ANALYTICS (G-P7S1FFYC0P) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P7S1FFYC0P"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -28,17 +28,30 @@
         body { background: var(--dark); color: white; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.6; -webkit-tap-highlight-color: transparent; }
         .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.15); backdrop-filter: blur(15px); }
         .red-glow { box-shadow: 0 0 40px rgba(255, 0, 0, 0.2); }
-        .btn-main { background: var(--red); color: #ffffff !important; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; border: none; cursor: pointer; }
+        
+        /* BOTÃO CHAVE DE OURO - TEXTO BRANCO EXTRA FORTE */
+        .btn-main { 
+            background: var(--red); 
+            color: #ffffff !important; 
+            font-weight: 900; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            transition: 0.3s; 
+            border: none; 
+            cursor: pointer; 
+        }
         .btn-main:hover { background: #cc0000; transform: translateY(-2px); box-shadow: 0 5px 25px rgba(255,0,0,0.5); }
+        .btn-main:active { transform: scale(0.95); }
+        
         input { background: #000 !important; border: 2px solid #222 !important; color: white !important; text-align: center; outline: none; transition: 0.3s; }
-        input:focus { border-color: var(--red) !important; }
+        input:focus { border-color: var(--red) !important; box-shadow: 0 0 15px rgba(255,0,0,0.2); }
         .section-title { color: var(--red); font-weight: 900; font-style: italic; font-size: 24px; margin-bottom: 20px; border-left: 5px solid var(--red); padding-left: 15px; }
         .content-box { background: var(--gray); padding: 25px; border-radius: 20px; border: 1px solid #1a1a1a; margin-bottom: 20px; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
 
-    <!-- 2. MONETAG SMART TAG -->
+    <!-- 2. MONETAG SMART TAG (ID: 10781852) -->
     <script src="https://alwingulla.com/act/files/tag.min.js?z=10781852" data-cfasync="false" async></script>
 
     <nav class="p-6 border-b border-gray-900 bg-black sticky top-0 z-50 text-center">
@@ -49,11 +62,15 @@
         <h2 class="text-3xl font-black mb-4 uppercase leading-tight tracking-tight">TikTok Downloader <span class="text-red-600">HD</span></h2>
         <p class="text-gray-500 text-sm mb-10 font-medium">Download sem marca d'água e sem limites.</p>
 
+        <!-- AREA DE DOWNLOAD -->
         <div class="glass-card p-10 rounded-[40px] red-glow">
             <input type="text" id="urlInput" placeholder="Cole o link do TikTok aqui..." class="w-full p-5 rounded-2xl mb-6 text-lg">
-            <button onclick="baixarVideo()" id="btnAction" class="w-full btn-main p-5 rounded-2xl text-xl shadow-2xl">BAIXAR AGORA</button>
+            <button onclick="baixarVideo()" id="btnAction" class="w-full btn-main p-5 rounded-2xl text-xl shadow-2xl">
+                BAIXAR AGORA
+            </button>
         </div>
 
+        <!-- CARREGAMENTO -->
         <div id="loading" class="mt-10 hidden">
             <div class="animate-spin rounded-full h-12 w-12 border-b-4 border-red-600 mx-auto"></div>
             <p class="text-red-500 font-black mt-4 uppercase text-[10px] tracking-widest">Processando vídeo...</p>
@@ -64,9 +81,9 @@
 
     <!-- SOBRE NÓS E FAQ -->
     <section class="max-w-4xl mx-auto px-6 py-12 text-left border-t border-gray-900">
-        <h3 class="section-title text-white uppercase italic">Sobre o SnapNoMark</h3>
+        <h3 class="section-title text-white uppercase italic text-2xl">O que é o SnapNoMark?</h3>
         <div class="content-box">
-            <p class="text-gray-400 text-sm">O <strong>SnapNoMark</strong> é a solução nº 1 para baixar vídeos do TikTok em alta definição (HD) sem marca d'água. 100% gratuito e seguro.</p>
+            <p class="text-gray-400 text-sm">O <strong>SnapNoMark</strong> é a solução nº 1 para baixar vídeos do TikTok em HD sem marca d'água. 100% gratuito e rápido.</p>
         </div>
     </section>
 
@@ -80,9 +97,9 @@
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
                 navigator.serviceWorker.register('/sw.js').then(function(reg) {
-                    console.log('SnapNoMark: Notificações Prontas!');
+                    console.log('SnapNoMark: Notificações Push Ativas!');
                 }).catch(function(err) {
-                    console.log('Erro no Service Worker:', err);
+                    console.error('Falha no SW:', err);
                 });
             });
         }
@@ -128,19 +145,16 @@
                                 📥 SALVAR MP4 HD
                             </a>
                         </div>`;
+                    gtag('event', 'download_sucesso');
                 } else { throw new Error(); }
             } catch (error) {
-                alert('Erro na API. Verifique o link ou cota diária.');
+                alert('Erro ao processar. Verifique o link ou cota da API.');
                 loading.classList.add('hidden');
             } finally { 
                 btn.disabled = false; 
                 btn.innerHTML = "BAIXAR AGORA"; 
             }
-        } if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js');
-  });
-}
+        }
     </script>
 </body>
 </html>
