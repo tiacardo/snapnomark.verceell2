@@ -136,7 +136,11 @@
                 btn.disabled = false; 
                 btn.innerHTML = "BAIXAR AGORA"; 
             }
-        } // <--- A CHAVE QUE FALTAVA AQUI!
+        } if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
     </script>
 </body>
 </html>
