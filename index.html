@@ -198,6 +198,17 @@
                 btn.innerHTML = "BAIXAR AGORA";
             }
         }
-    </script>
+    <script>
+  // REGISTRO DO SERVICE WORKER PARA NOTIFICAÇÕES
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js').then(function(reg) {
+        console.log('SnapNoMark: Notificações Push Prontas!');
+      }).catch(function(err) {
+        console.error('Erro ao registrar Service Worker:', err);
+      });
+    });
+  }
+</script>
 </body>
 </html>
