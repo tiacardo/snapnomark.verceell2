@@ -13,46 +13,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <!-- SEO DE ALTA PERFORMANCE - SnapNoMark -->
+    <!-- SEO DE ALTA PERFORMANCE -->
     <title>SnapNoMark - Baixar Vídeo do TikTok Sem Marca d'Água HD</title>
-    <meta name="description" content="O SnapNoMark é a melhor ferramenta online para baixar vídeos do TikTok sem marca d'água em HD. Grátis, rápido e ilimitado para qualquer dispositivo.">
-    <meta name="keywords" content="baixar video tiktok, snapnomark, sem marca d'agua, download tiktok mp4, tirar logo tiktok, salvar tiktok hd">
+    <meta name="description" content="O SnapNoMark é a melhor ferramenta online para baixar vídeos do TikTok sem marca d'água em HD. Rápido, gratuito e ilimitado para Android e iPhone.">
+    <meta name="keywords" content="baixar video tiktok, snapnomark, sem marca d'agua, download tiktok mp4, tirar logo tiktok, baixar tiktok hd">
 
-    <!-- JSON-LD FAQ PARA O GOOGLE -->
+    <!-- JSON-LD FAQ (PARA O GOOGLE) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [{
         "@type": "Question",
-        "name": "Como usar o SnapNoMark para baixar vídeos?",
+        "name": "Como baixar vídeo do TikTok sem marca d'água?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Basta copiar o link do vídeo no TikTok, colar na barra de busca do SnapNoMark e clicar em baixar. O processo é rápido e remove o logotipo automaticamente."
+          "text": "Basta copiar o link do vídeo no TikTok, colar no SnapNoMark e clicar no botão de baixar. O processo é automático e gratuito."
         }
       }, {
         "@type": "Question",
-        "name": "O SnapNoMark cobra pelo download?",
+        "name": "O SnapNoMark funciona no celular?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Não, o SnapNoMark é uma ferramenta 100% gratuita e ilimitada."
+          "text": "Sim, o SnapNoMark é otimizado para iPhone (iOS) e Android via navegadores Chrome ou Safari."
         }
       }]
     }
     </script>
 
-    <!-- Tailwind & FontAwesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        :root { --red: #ff0000; --dark: #050505; --gray: #111111; }
+        :root { --red: #ff0000; --dark: #050505; --gray: #0f0f0f; }
         body { background: var(--dark); color: white; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.6; -webkit-tap-highlight-color: transparent; }
-        
-        .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(15px); }
+        .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 0, 0, 0.15); backdrop-filter: blur(15px); }
         .red-glow { box-shadow: 0 0 40px rgba(255, 0, 0, 0.2); }
         
-        /* BOTÃO CHAVE DE OURO - TEXTO BRANCO */
+        /* BOTÃO CHAVE DE OURO - LETRA BRANCA EXTRA FORTE */
         .btn-main { 
             background: var(--red); 
             color: #ffffff !important; 
@@ -68,7 +66,6 @@
         
         input { background: #000 !important; border: 2px solid #222 !important; color: white !important; text-align: center; outline: none; transition: 0.3s; }
         input:focus { border-color: var(--red) !important; box-shadow: 0 0 15px rgba(255,0,0,0.2); }
-        
         .section-title { color: var(--red); font-weight: 900; font-style: italic; font-size: 24px; margin-bottom: 20px; border-left: 5px solid var(--red); padding-left: 15px; }
         .content-box { background: var(--gray); padding: 25px; border-radius: 20px; border: 1px solid #1a1a1a; margin-bottom: 20px; }
     </style>
@@ -78,17 +75,15 @@
     <!-- 2. MONETAG SMART TAG (ID: 10781852) -->
     <script src="https://alwingulla.com/act/files/tag.min.js?z=10781852" data-cfasync="false" async></script>
 
-    <!-- Header -->
     <nav class="p-6 border-b border-gray-900 bg-black sticky top-0 z-50 text-center">
         <h1 class="text-3xl font-black text-red-600 italic tracking-tighter uppercase">SnapNoMark</h1>
     </nav>
 
-    <!-- Hero / Download Section -->
     <main class="container mx-auto px-6 py-10 text-center max-w-lg flex-grow">
         <h2 class="text-3xl font-black mb-4 uppercase leading-tight tracking-tight">TikTok Downloader <span class="text-red-600">HD</span></h2>
-        <p class="text-gray-500 text-sm mb-10 font-medium">Salve vídeos sem marca d'água de forma ilimitada.</p>
+        <p class="text-gray-500 text-sm mb-10 font-medium">Download sem marca d'água e sem limites.</p>
 
-        <!-- CAIXA DE DOWNLOAD -->
+        <!-- AREA DE DOWNLOAD -->
         <div class="glass-card p-10 rounded-[40px] red-glow">
             <input type="text" id="urlInput" placeholder="Cole o link do TikTok aqui..." class="w-full p-5 rounded-2xl mb-6 text-lg">
             <button onclick="baixarVideo()" id="btnAction" class="w-full btn-main p-5 rounded-2xl text-xl shadow-2xl">
@@ -96,51 +91,51 @@
             </button>
         </div>
 
-        <!-- LOADING -->
+        <!-- CARREGAMENTO -->
         <div id="loading" class="mt-10 hidden">
             <div class="animate-spin rounded-full h-12 w-12 border-b-4 border-red-600 mx-auto"></div>
-            <p class="text-red-500 font-black mt-4 uppercase text-[10px] tracking-widest">Processando...</p>
+            <p class="text-red-500 font-black mt-4 uppercase text-[10px] tracking-widest">Processando vídeo...</p>
         </div>
 
         <div id="resultado" class="mt-10 hidden"></div>
     </main>
 
-    <!-- FAQ e SOBRE NÓS -->
+    <!-- SOBRE NÓS E FAQ -->
     <section class="max-w-4xl mx-auto px-6 py-12 text-left border-t border-gray-900">
-        <h3 class="section-title text-white uppercase italic text-2xl">O que é o SnapNoMark?</h3>
+        <h3 class="section-title text-white uppercase italic">Sobre o SnapNoMark</h3>
         <div class="content-box">
             <p class="text-gray-400 text-sm leading-relaxed">
-                O <strong>SnapNoMark</strong> é uma plataforma focada em produtividade e qualidade. Nosso motor de busca extrai diretamente o vídeo original do TikTok, eliminando o logotipo indesejado e entregando um arquivo MP4 pronto para download em qualquer smartphone ou PC.
+                O <strong>SnapNoMark</strong> é a solução definitiva para salvar vídeos do TikTok em alta definição (HD) sem a marca d'água. Nossa plataforma é gratuita, rápida e 100% segura para qualquer dispositivo.
             </p>
         </div>
 
-        <h3 class="section-title text-white uppercase italic text-2xl">Perguntas Frequentes</h3>
-        <div class="space-y-4 text-left">
+        <h3 class="section-title text-white uppercase italic text-2xl">Dúvidas Frequentes</h3>
+        <div class="space-y-4">
             <div class="content-box">
-                <h4 class="text-white font-bold mb-2 text-sm uppercase">Funciona no iPhone e Android?</h4>
-                <p class="text-gray-400 text-xs">Sim, o SnapNoMark é 100% online e otimizado para navegadores Safari e Chrome em qualquer sistema mobile.</p>
+                <h4 class="text-white font-bold mb-2 text-sm uppercase">Como salvar o vídeo na galeria?</h4>
+                <p class="text-gray-400 text-xs">Cole o link acima, clique em baixar e salve o arquivo MP4 gerado. O vídeo aparecerá automaticamente na sua galeria de fotos.</p>
             </div>
             <div class="content-box">
-                <h4 class="text-white font-bold mb-2 text-sm uppercase">Onde o vídeo é salvo?</h4>
-                <p class="text-gray-400 text-xs">O download vai diretamente para a pasta 'Downloads' do seu dispositivo ou para o seu rolo de câmera.</p>
+                <h4 class="text-white font-bold mb-2 text-sm uppercase">O SnapNoMark é gratuito?</h4>
+                <p class="text-gray-400 text-xs">Sim, oferecemos downloads ilimitados sem cobrar absolutamente nada por isso.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="p-12 text-center text-[11px] text-gray-700 border-t border-gray-900 bg-black">
+    <footer class="p-10 text-center text-[10px] text-gray-700 border-t border-gray-900 bg-black">
         <p class="font-black text-red-600 mb-2 uppercase tracking-widest text-lg italic text-center">SnapNoMark</p>
-        <p class="mb-4">O melhor downloader de TikTok oficial.</p>
-        &copy; 2024 - Todos os direitos reservados.
+        <p>&copy; 2024 - Download TikTok Oficial HD. <br> Não somos afiliados ao TikTok.</p>
     </footer>
 
     <script>
-        // --- Registro Service Worker (Notificações Monetag) ---
+        // --- ATIVAÇÃO DAS NOTIFICAÇÕES PUSH ---
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js').then(reg => {
-                    console.log('SnapNoMark: Notificações Ativas');
-                }).catch(err => console.log('SW Error:', err));
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').then(function(reg) {
+                    console.log('SnapNoMark: Push Ativo!');
+                }).catch(function(err) {
+                    console.error('Falha no Service Worker', err);
+                });
             });
         }
 
@@ -151,19 +146,17 @@
             const loading = document.getElementById('loading');
 
             if (!urlInput.includes('tiktok.com')) {
-                alert('⚠️ Link inválido! Cole um link oficial do TikTok.');
+                alert('⚠️ Cole um link válido do TikTok!');
                 return;
             }
 
-            // Enviar evento ao Google Analytics
-            gtag('event', 'tentativa_download', { 'video_link': urlInput });
+            gtag('event', 'tentativa_download', { 'link': urlInput });
 
             btn.disabled = true;
             btn.innerHTML = "CARREGANDO...";
             loading.classList.remove('hidden');
             resDiv.innerHTML = "";
 
-            // --- CONFIGURAÇÃO DA API ---
             const apiKey = '0369b029a8msh559b08a58024200p18eed6jsnd37ffae9158f';
             const apiHost = 'tiktok-video-no-watermark2.p.rapidapi.com';
 
@@ -183,7 +176,7 @@
                         <div class="bg-red-600/5 border border-red-600/20 p-8 rounded-[35px] animate-pulse">
                             <p class="text-green-500 font-black mb-4 uppercase">✅ Vídeo Pronto!</p>
                             <a href="${data.data.play}" target="_blank" class="btn-main block w-full p-5 rounded-2xl font-black text-white text-center text-lg decoration-none">
-                                📥 SALVAR MP4 HD
+                                📥 SALVAR VÍDEO MP4 HD
                             </a>
                         </div>
                     `;
@@ -191,8 +184,7 @@
                 } else { throw new Error(); }
             } catch (error) {
                 loading.classList.add('hidden');
-                alert('Ocorreu um erro. Verifique o link ou cota da API.');
-                gtag('event', 'download_erro');
+                alert('Erro na API. Tente novamente mais tarde.');
             } finally { 
                 btn.disabled = false; 
                 btn.innerHTML = "BAIXAR AGORA";
@@ -209,4 +201,6 @@
       });
     });
   }
-</script>
+    </script>
+</body>
+</html>
