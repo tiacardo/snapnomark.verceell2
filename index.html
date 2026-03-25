@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- 1. GOOGLE ANALYTICS (G-P7S1FFYC0P) -->
+    <!-- COLOQUE A META TAG DA MONETAG ABAIXO DESTA LINHA PARA VERIFICAR -->
+    <meta name="monetag" content="SUA_TAG_AQUI">
+
+    <!-- 1. GOOGLE ANALYTICS -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P7S1FFYC0P"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -13,33 +16,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <!-- SEO DE ALTA PERFORMANCE -->
     <title>SnapNoMark - Baixar Vídeo do TikTok Sem Marca d'Água HD</title>
     <meta name="description" content="O SnapNoMark é a melhor ferramenta online para baixar vídeos do TikTok sem marca d'água em HD. Rápido, gratuito e ilimitado para Android e iPhone.">
-    <meta name="keywords" content="baixar video tiktok, snapnomark, sem marca d'agua, download tiktok mp4, tirar logo tiktok, baixar tiktok hd">
-
-    <!-- JSON-LD FAQ (PARA O GOOGLE) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Como baixar vídeo do TikTok sem marca d'água?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Basta copiar o link do vídeo no TikTok, colar no SnapNoMark e clicar no botão de baixar. O processo é automático e gratuito."
-        }
-      }, {
-        "@type": "Question",
-        "name": "O SnapNoMark funciona no celular?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sim, o SnapNoMark é otimizado para iPhone (iOS) e Android via navegadores Chrome ou Safari."
-        }
-      }]
-    }
-    </script>
+    <meta name="keywords" content="baixar video tiktok, snapnomark, sem marca d'agua, download tiktok mp4, tirar logo tiktok">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -47,32 +26,19 @@
     <style>
         :root { --red: #ff0000; --dark: #050505; --gray: #0f0f0f; }
         body { background: var(--dark); color: white; font-family: 'Inter', sans-serif; margin: 0; line-height: 1.6; -webkit-tap-highlight-color: transparent; }
-        .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 0, 0, 0.15); backdrop-filter: blur(15px); }
+        .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.15); backdrop-filter: blur(15px); }
         .red-glow { box-shadow: 0 0 40px rgba(255, 0, 0, 0.2); }
-        
-        /* BOTÃO CHAVE DE OURO - LETRA BRANCA EXTRA FORTE */
-        .btn-main { 
-            background: var(--red); 
-            color: #ffffff !important; 
-            font-weight: 900; 
-            text-transform: uppercase; 
-            letter-spacing: 1px;
-            transition: 0.3s; 
-            border: none; 
-            cursor: pointer; 
-        }
+        .btn-main { background: var(--red); color: #ffffff !important; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; border: none; cursor: pointer; }
         .btn-main:hover { background: #cc0000; transform: translateY(-2px); box-shadow: 0 5px 25px rgba(255,0,0,0.5); }
-        .btn-main:active { transform: scale(0.95); }
-        
         input { background: #000 !important; border: 2px solid #222 !important; color: white !important; text-align: center; outline: none; transition: 0.3s; }
-        input:focus { border-color: var(--red) !important; box-shadow: 0 0 15px rgba(255,0,0,0.2); }
+        input:focus { border-color: var(--red) !important; }
         .section-title { color: var(--red); font-weight: 900; font-style: italic; font-size: 24px; margin-bottom: 20px; border-left: 5px solid var(--red); padding-left: 15px; }
         .content-box { background: var(--gray); padding: 25px; border-radius: 20px; border: 1px solid #1a1a1a; margin-bottom: 20px; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
 
-    <!-- 2. MONETAG SMART TAG (ID: 10781852) -->
+    <!-- 2. MONETAG SMART TAG -->
     <script src="https://alwingulla.com/act/files/tag.min.js?z=10781852" data-cfasync="false" async></script>
 
     <nav class="p-6 border-b border-gray-900 bg-black sticky top-0 z-50 text-center">
@@ -83,15 +49,11 @@
         <h2 class="text-3xl font-black mb-4 uppercase leading-tight tracking-tight">TikTok Downloader <span class="text-red-600">HD</span></h2>
         <p class="text-gray-500 text-sm mb-10 font-medium">Download sem marca d'água e sem limites.</p>
 
-        <!-- AREA DE DOWNLOAD -->
         <div class="glass-card p-10 rounded-[40px] red-glow">
             <input type="text" id="urlInput" placeholder="Cole o link do TikTok aqui..." class="w-full p-5 rounded-2xl mb-6 text-lg">
-            <button onclick="baixarVideo()" id="btnAction" class="w-full btn-main p-5 rounded-2xl text-xl shadow-2xl">
-                BAIXAR AGORA
-            </button>
+            <button onclick="baixarVideo()" id="btnAction" class="w-full btn-main p-5 rounded-2xl text-xl shadow-2xl">BAIXAR AGORA</button>
         </div>
 
-        <!-- CARREGAMENTO -->
         <div id="loading" class="mt-10 hidden">
             <div class="animate-spin rounded-full h-12 w-12 border-b-4 border-red-600 mx-auto"></div>
             <p class="text-red-500 font-black mt-4 uppercase text-[10px] tracking-widest">Processando vídeo...</p>
@@ -104,41 +66,28 @@
     <section class="max-w-4xl mx-auto px-6 py-12 text-left border-t border-gray-900">
         <h3 class="section-title text-white uppercase italic">Sobre o SnapNoMark</h3>
         <div class="content-box">
-            <p class="text-gray-400 text-sm leading-relaxed">
-                O <strong>SnapNoMark</strong> é a solução definitiva para salvar vídeos do TikTok em alta definição (HD) sem a marca d'água. Nossa plataforma é gratuita, rápida e 100% segura para qualquer dispositivo.
-            </p>
-        </div>
-
-        <h3 class="section-title text-white uppercase italic text-2xl">Dúvidas Frequentes</h3>
-        <div class="space-y-4">
-            <div class="content-box">
-                <h4 class="text-white font-bold mb-2 text-sm uppercase">Como salvar o vídeo na galeria?</h4>
-                <p class="text-gray-400 text-xs">Cole o link acima, clique em baixar e salve o arquivo MP4 gerado. O vídeo aparecerá automaticamente na sua galeria de fotos.</p>
-            </div>
-            <div class="content-box">
-                <h4 class="text-white font-bold mb-2 text-sm uppercase">O SnapNoMark é gratuito?</h4>
-                <p class="text-gray-400 text-xs">Sim, oferecemos downloads ilimitados sem cobrar absolutamente nada por isso.</p>
-            </div>
+            <p class="text-gray-400 text-sm">O <strong>SnapNoMark</strong> é a solução nº 1 para baixar vídeos do TikTok em alta definição (HD) sem marca d'água. 100% gratuito e seguro.</p>
         </div>
     </section>
 
     <footer class="p-10 text-center text-[10px] text-gray-700 border-t border-gray-900 bg-black">
         <p class="font-black text-red-600 mb-2 uppercase tracking-widest text-lg italic text-center">SnapNoMark</p>
-        <p>&copy; 2024 - Download TikTok Oficial HD. <br> Não somos afiliados ao TikTok.</p>
+        &copy; 2024 - Download TikTok Oficial HD.
     </footer>
 
     <script>
-        // --- ATIVAÇÃO DAS NOTIFICAÇÕES PUSH ---
+        // --- 1. REGISTRO DO SERVICE WORKER (NOTIFICAÇÕES PUSH) ---
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
                 navigator.serviceWorker.register('/sw.js').then(function(reg) {
-                    console.log('SnapNoMark: Push Ativo!');
+                    console.log('SnapNoMark: Notificações Prontas!');
                 }).catch(function(err) {
-                    console.error('Falha no Service Worker', err);
+                    console.log('Erro no Service Worker:', err);
                 });
             });
         }
 
+        // --- 2. LÓGICA DE DOWNLOAD ---
         async function baixarVideo() {
             const urlInput = document.getElementById('urlInput').value.trim();
             const resDiv = document.getElementById('resultado');
@@ -174,33 +123,20 @@
                     resDiv.classList.remove('hidden');
                     resDiv.innerHTML = `
                         <div class="bg-red-600/5 border border-red-600/20 p-8 rounded-[35px] animate-pulse">
-                            <p class="text-green-500 font-black mb-4 uppercase">✅ Vídeo Pronto!</p>
+                            <p class="text-green-500 font-black mb-4 uppercase text-center">✅ Vídeo Pronto!</p>
                             <a href="${data.data.play}" target="_blank" class="btn-main block w-full p-5 rounded-2xl font-black text-white text-center text-lg decoration-none">
-                                📥 SALVAR VÍDEO MP4 HD
+                                📥 SALVAR MP4 HD
                             </a>
-                        </div>
-                    `;
-                    gtag('event', 'download_sucesso');
+                        </div>`;
                 } else { throw new Error(); }
             } catch (error) {
+                alert('Erro na API. Verifique o link ou cota diária.');
                 loading.classList.add('hidden');
-                alert('Erro na API. Tente novamente mais tarde.');
             } finally { 
                 btn.disabled = false; 
-                btn.innerHTML = "BAIXAR AGORA";
+                btn.innerHTML = "BAIXAR AGORA"; 
             }
-        }
-    <script><script>
-  // REGISTRO DO SERVICE WORKER PARA NOTIFICAÇÕES
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/sw.js').then(function(reg) {
-        console.log('SnapNoMark: Notificações Push Prontas!');
-      }).catch(function(err) {
-        console.error('Erro ao registrar Service Worker:', err);
-      });
-    });
-  }
+        } // <--- A CHAVE QUE FALTAVA AQUI!
     </script>
 </body>
 </html>
