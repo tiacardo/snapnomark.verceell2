@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Verificação do Pinterest e Google Search Console -->
     <meta name="p:domain_verify" content="d5b7f467663ae0a96199c322feb2994e"/>
-    <!-- Tag de Verificação do Google Search Console -->
     <meta name="google-site-verification" content="PnnwfCaod9KnTiUog4mh-TEVtmicycnJXoPPh4UUaMI" />
+    
     <!-- 1. VERIFICAÇÃO MONETAG -->
     <meta name="monetag" content="3bcfc9ba9946005f642237bc6ca929f4">
 
@@ -19,59 +20,41 @@
       gtag('config', 'G-89HXCVKFTX');
     </script>
 
-    <!-- 4. MONETAG VIGNETTE/ON-CLICK -->
-    <script src="https://quge5.com/88/tag.min.js" data-zone="223395" async data-cfasync="false"></script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <title>SnapNoMark - Baixar Vídeo do TikTok Sem Marca d'Água HD</title>
     <meta name="description" content="O melhor downloader de TikTok online. Baixe vídeos sem marca d'água em HD de forma rápida, gratuita e ilimitada. SnapNoMark oficial.">
-    <meta name="keywords" content="baixar video tiktok, snapnomark, sem marca d'agua, download tiktok mp4, tirar logo tiktok">
-
-    <!-- JSON-LD FAQ (SEO PARA GOOGLE) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Como baixar vídeo do TikTok sem marca d'água?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Basta copiar o link do vídeo no TikTok, colar na barra de busca do SnapNoMark e clicar em baixar. O processo é automático e gratuito."
-        }
-      }, {
-        "@type": "Question",
-        "name": "O SnapNoMark é gratuito?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sim, o SnapNoMark é uma ferramenta 100% gratuita e ilimitada para todos os usuários."
-        }
-      }]
-    }
-    </script>
-
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
         :root { --red: #ff0000; --dark: #050505; --gray: #0f0f0f; }
         body { background: var(--dark); color: white; font-family: 'Inter', sans-serif; margin: 0; scroll-behavior: smooth; }
+        
         .neon-border { border: 1px solid var(--red); box-shadow: 0 0 25px rgba(255, 0, 0, 0.2); }
         .glass-card { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .btn-main { background: var(--red); color: white !important; font-weight: 900; text-transform: uppercase; transition: 0.3s; box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); border: none; cursor: pointer; }
+        
+        .btn-main { 
+            background: var(--red); color: white !important; font-weight: 900; 
+            text-transform: uppercase; transition: 0.3s; 
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); border: none; cursor: pointer;
+        }
         .btn-main:hover { transform: scale(1.02); box-shadow: 0 0 30px rgba(255, 0, 0, 0.6); }
+        
         .pulse-red { animation: pulse-red 2s infinite; }
         @keyframes pulse-red { 0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(255, 0, 0, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); } }
+        
         .step-number { background: var(--red); width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; margin-bottom: 15px; font-size: 14px; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
 
-    <!-- 5. MONETAG SMART TAG -->
+    <!-- 4. MONETAG SMART TAG (Removi o loop, deixei apenas um script de fundo) -->
     <script src="https://alwingulla.com/act/files/tag.min.js?z=10781852" data-cfasync="false" async></script>
 
+    <!-- HEADER -->
     <nav class="p-5 border-b border-gray-900 bg-black/90 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-black text-red-600 italic tracking-tighter uppercase">SnapNoMark</h1>
@@ -82,6 +65,7 @@
         </div>
     </nav>
 
+    <!-- ÁREA PRINCIPAL DE DOWNLOAD -->
     <main class="container mx-auto px-6 py-12 text-center max-w-lg flex-grow">
         <h2 class="text-4xl font-black mb-3 uppercase leading-tight">TikTok <span class="text-red-600">HD</span></h2>
         <p class="text-gray-500 text-sm mb-10 font-medium italic">Download sem marca d'água rápido e grátis.</p>
@@ -89,7 +73,10 @@
         <div class="glass-card p-10 rounded-[40px] neon-border">
             <input type="text" id="urlInput" placeholder="Cole o link do TikTok aqui..." 
                 class="w-full bg-black border-2 border-gray-800 p-5 rounded-2xl outline-none focus:border-red-600 text-white mb-5 text-center transition-all">
-            <button onclick="baixarVideo()" id="btnAction" class="w-full btn-main p-5 rounded-2xl text-xl">BAIXAR AGORA</button>
+            
+            <button onclick="baixarVideo()" id="btnAction" class="w-full btn-main p-5 rounded-2xl text-xl">
+                BAIXAR AGORA
+            </button>
         </div>
 
         <div id="loading" class="mt-10 hidden text-center">
@@ -100,6 +87,7 @@
         <div id="resultado" class="mt-10 hidden"></div>
     </main>
 
+    <!-- SEÇÃO DE RECURSOS (VIDA AO SITE) -->
     <section class="bg-black/50 py-16 px-6 border-y border-gray-900">
         <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div class="p-8 glass-card rounded-3xl border-none">
@@ -107,12 +95,12 @@
                 <h3 class="font-bold text-lg mb-2 text-white">Ultra Rápido</h3>
                 <p class="text-gray-500 text-xs">Link processado em segundos pela tecnologia Snap-Cloud.</p>
             </div>
-            <div class="p-8 glass-card rounded-3xl border-none">
+            <div class="text-center p-8 glass-card rounded-3xl border-none">
                 <i class="fas fa-shield-alt text-red-600 text-4xl mb-4"></i>
                 <h3 class="font-bold text-lg mb-2 text-white">Privacidade</h3>
                 <p class="text-gray-500 text-xs">Nenhum dado é coletado. Download 100% anônimo.</p>
             </div>
-            <div class="p-8 glass-card rounded-3xl border-none">
+            <div class="text-center p-8 glass-card rounded-3xl border-none">
                 <i class="fas fa-gem text-red-600 text-4xl mb-4"></i>
                 <h3 class="font-bold text-lg mb-2 text-white">Fidelidade HD</h3>
                 <p class="text-gray-500 text-xs">Resolução original preservada, sem logos.</p>
@@ -120,7 +108,7 @@
         </div>
     </section>
 
-    <!-- GUIA PASSO A PASSO CORRIGIDO -->
+    <!-- GUIA PASSO A PASSO -->
     <section class="py-16 px-6 max-w-4xl mx-auto">
         <h3 class="text-2xl font-black text-center mb-12 uppercase italic underline decoration-red-600 pb-2">Como usar o SnapNoMark</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
@@ -142,42 +130,32 @@
         </div>
     </section>
 
+    <!-- SOBRE NÓS E FAQ -->
     <section class="max-w-3xl mx-auto px-6 py-10 text-left border-t border-gray-900">
         <h3 class="text-xl font-black text-red-600 mb-6 uppercase italic">Protocolo SnapNoMark</h3>
-        <div class="glass-card p-8 rounded-3xl mb-12">
-            <p class="text-gray-400 text-sm leading-relaxed">
-                Desenvolvemos uma ferramenta de engenharia capaz de extrair os metadados dos vídeos do TikTok sem as logomarcas que cobrem a tela. O <strong>SnapNoMark</strong> é focado em performance mobile para Android e iPhone.
-            </p>
+        <div class="glass-card p-8 rounded-3xl mb-12 text-sm text-gray-400">
+            O <strong>SnapNoMark</strong> foi criado para entregar o conteúdo original do TikTok para criadores e fãs. Nossa ferramenta remove a marca d'água acessando os metadados diretamente do servidor, garantindo o melhor <b>MP4 HD</b>.
         </div>
 
         <h4 class="text-xl font-black text-red-600 mb-6 uppercase italic text-right">Dúvidas Frequentes</h4>
         <div class="space-y-4">
             <details class="bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800 cursor-pointer">
                 <summary class="font-bold text-sm uppercase">O download é grátis?</summary>
-                <p class="mt-4 text-gray-500 text-xs leading-relaxed">Sim! Oferecemos suporte ilimitado e gratuito para todos os usuários.</p>
+                <p class="mt-4 text-gray-500 text-xs">Sim! Nosso serviço é ilimitado e gratuito para todos.</p>
             </details>
         </div>
     </section>
 
+    <!-- RODAPÉ -->
     <footer class="mt-auto border-t border-red-900/30 bg-black py-10 px-8 text-center md:text-left">
-        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="space-y-2">
-                <h3 class="text-xl font-black text-red-600 italic tracking-tighter uppercase">SnapNoMark</h3>
-                <p class="text-[9px] text-gray-500 uppercase tracking-widest leading-relaxed">Líder em tecnologia de extração digital.</p>
-            </div>
-            <div class="flex flex-col md:items-end gap-2 text-[9px] text-gray-700 uppercase">
-                <span class="text-white font-bold tracking-widest border border-red-500/20 px-3 py-1 rounded">Protocolo Ativado</span>
-                <p class="mt-2">&copy; 2024 SnapNoMark - Todos os direitos reservados.</p>
-            </div>
-        </div>
+        <h3 class="text-xl font-black text-red-600 italic uppercase">SnapNoMark</h3>
+        <p class="text-[9px] text-gray-600 uppercase tracking-widest mt-2">&copy; 2024 - Todos os direitos reservados. Não somos o TikTok.</p>
     </footer>
 
     <script>
-        // REGISTRO SERVICE WORKER
+        // REGISTRO SW
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js').catch(err => console.log('SW Error'));
-            });
+            window.addEventListener('load', () => { navigator.serviceWorker.register('/sw.js'); });
         }
 
         async function baixarVideo() {
@@ -187,11 +165,9 @@
             const loading = document.getElementById('loading');
 
             if (!urlInput.includes('tiktok.com')) {
-                alert('⚠️ Cole um link do TikTok válido!');
+                alert('⚠️ Link inválido!');
                 return;
             }
-
-            gtag('event', 'download_attempt', { 'url': urlInput });
 
             btn.disabled = true; btn.innerHTML = "AGUARDE...";
             loading.classList.remove('hidden'); resDiv.innerHTML = "";
@@ -213,7 +189,8 @@
                     resDiv.classList.remove('hidden');
                     resDiv.innerHTML = `
                         <div class="bg-red-600/5 border border-red-600/20 p-10 rounded-[40px] pulse-red text-center">
-                            <p class="text-green-500 font-black mb-5 uppercase text-lg italic text-center">✅ Vídeo Pronto!</p>
+                            <p class="text-green-500 font-black mb-5 uppercase text-lg italic">✅ Vídeo Pronto!</p>
+                            <!-- AQUI ESTÁ A CHAVE: Abre o anúncio apenas no clique do link final -->
                             <a href="${data.data.play}" 
                                onclick="window.open('https://omg10.com/4/10781852', '_blank')" 
                                target="_blank" 
@@ -221,16 +198,14 @@
                                 📥 SALVAR VÍDEO MP4 HD
                             </a>
                         </div>`;
-                    gtag('event', 'download_success');
                 } else { throw new Error(); }
             } catch (error) {
                 loading.classList.add('hidden');
                 alert('Erro ao processar. Certifique-se de que o vídeo é público.');
             } finally {
-                btn.disabled = false;
-                btn.innerHTML = "BAIXAR AGORA";
+                btn.disabled = false; btn.innerHTML = "BAIXAR AGORA";
             }
         }
     </script>
 </body>
-    </html>
+</html>
