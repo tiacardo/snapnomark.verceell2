@@ -1,132 +1,80 @@
-<script src="https://alwingulla.com/act/files/tag.min.js?z=10781852" data-cfasync="false" async></script>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- VERIFICACAO MONETAG (Meta tag correta abaixo) -->
+    <meta name="monetag" content="COLE_AQUI_SEU_CODIGO_MONETAG">
 
-<nav class="p-5 border-b border-gray-900 bg-black/90 sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center">
-        <h1 class="text-2xl font-black text-red-600 italic tracking-tighter uppercase">SnapNoMark</h1>
-        <div class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-green-500 rounded-full animate-ping"></span>
-            <span class="text-[9px] font-bold uppercase text-gray-400">Server Online</span>
-        </div>
-    </div>
-</nav>
+    <!-- 1. GOOGLE ANALYTICS (SYNTAX EM INGLES) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-89HXCVKFTX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-89HXCVKFTX');
+    </script>
 
-<main class="container mx-auto px-6 py-12 text-center max-w-lg">
-    <h2 class="text-4xl font-black mb-3 uppercase leading-tight">TikTok <span class="text-red-600">HD</span></h2>
-    <p class="text-gray-500 text-sm mb-10 font-medium">Download sem marca d'água rápido e gratuito.</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SnapNoMark - Baixar Vídeo do TikTok Sem Marca d'Água HD</title>
+    <meta name="description" content="Baixe vídeos do TikTok sem marca d'água em HD com o SnapNoMark. Rápido, gratuito e ilimitado para Android e iPhone.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root { --red: #ff0000; --dark: #050505; }
+        body { background: var(--dark); color: white; font-family: 'Inter', sans-serif; margin: 0; }
+        .btn-main { background: var(--red); color: #ffffff !important; font-weight: 900; text-transform: uppercase; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
 
-    <div class="glass-card p-8 rounded-[35px] neon-border">
-        <input type="text" id="urlInput" placeholder="Cole o link do TikTok aqui..." 
-            class="w-full bg-black border-2 border-gray-800 p-5 rounded-2xl outline-none focus:border-red-600 text-white mb-5 text-center transition-all">
-        
-        <button onclick="baixarVideo()" id="btnAction" class="w-full btn-main p-5 rounded-2xl text-xl shadow-2xl">
-            BAIXAR AGORA
-        </button>
-    </div>
+    <!-- MONETAG SMART TAG (NAO TRADUZIR O SRC) -->
+    <script src="https://alwingulla.com/act/files/tag.min.js?z=10781852" data-cfasync="false" async></script>
 
-    <div id="loading" class="mt-10 hidden text-center">
-        <div class="animate-spin rounded-full h-12 w-12 border-b-4 border-red-600 mx-auto"></div>
-        <p class="text-red-500 font-black mt-4 uppercase text-[10px]">Processando Vídeo...</p>
-    </div>
+    <nav class="p-6 border-b border-gray-900 bg-black text-center">
+        <h1 class="text-3xl font-black text-red-600 italic uppercase">SnapNoMark</h1>
+    </nav>
 
-    <div id="resultado" class="mt-10 hidden"></div>
-</main>
+    <main class="container mx-auto px-6 py-10 text-center max-w-lg">
+        <input type="text" id="urlInput" placeholder="Cole o link do TikTok aqui..." class="w-full p-5 rounded-2xl bg-black border-2 border-gray-800 text-white text-center">
+        <button onclick="baixarVideo()" id="btnAction" class="w-full btn-main p-5 rounded-2xl text-xl mt-5">BAIXAR AGORA</button>
+        <div id="resultado" class="mt-10 hidden"></div>
+    </main>
 
-<!-- ÁREA DE DIFERENCIAIS -->
-<section class="bg-black/50 py-16 px-6 border-y border-gray-900">
-    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="text-center p-6 glass-card rounded-3xl">
-            <i class="fas fa-bolt text-red-600 text-3xl mb-4"></i>
-            <h3 class="font-bold text-lg mb-2">Servidor Snap</h3>
-            <p class="text-gray-500 text-xs">Alta velocidade de processamento para arquivos MP4.</p>
-        </div>
-        <!-- LUGAR ESTRATÉGICO PARA O LINK (Banner de Sugestão) -->
-        <a href="https://omg10.com/4/10781852" target="_blank" class="text-center p-6 border border-red-600/30 rounded-3xl bg-red-600/5 hover:bg-red-600/10 transition">
-            <i class="fas fa-rocket text-red-600 text-3xl mb-4"></i>
-            <h3 class="font-bold text-lg mb-2 text-white">Download VIP</h3>
-            <p class="text-gray-500 text-xs italic">Clique aqui se o download demorar mais de 5 segundos.</p>
-        </a>
-        <div class="text-center p-6 glass-card rounded-3xl">
-            <i class="fas fa-gem text-red-600 text-3xl mb-4"></i>
-            <h3 class="font-bold text-lg mb-2">Fidelidade HD</h3>
-            <p class="text-gray-500 text-xs">Mantemos a resolução original do criador.</p>
-        </div>
-    </div>
-</section>
-
-<!-- RODAPÉ -->
-<footer class="mt-auto border-t border-red-900/30 bg-black py-10 px-8">
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-        <div class="text-center md:text-left">
-            <h3 class="text-xl font-black text-red-600 italic tracking-tighter uppercase">SnapNoMark</h3>
-            <p class="text-[9px] text-gray-600 uppercase mt-1">Líder em Tecnologia de Extração Digital</p>
-        </div>
-        <div class="flex gap-4">
-            <a href="https://omg10.com/4/10781852" target="_blank" class="text-[9px] text-red-500 font-bold uppercase tracking-widest border border-red-500/20 px-3 py-1 rounded">Parcerias Ad</a>
-        </div>
-    </div>
-</footer>
-
-<script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => { navigator.serviceWorker.register('/sw.js'); });
-    }
-
-    async function baixarVideo() {
-        const urlInput = document.getElementById('urlInput').value.trim();
-        const resDiv = document.getElementById('resultado');
-        const btn = document.getElementById('btnAction');
-        const loading = document.getElementById('loading');
-
-        if (!urlInput.includes('tiktok.com')) {
-            alert('⚠️ Link inválido!');
-            return;
-        }
-
-        btn.disabled = true;
-        btn.innerHTML = "BUSCANDO...";
-        loading.classList.remove('hidden');
-        resDiv.innerHTML = "";
-
-        const apiKey = '0369b029a8msh559b08a58024200p18eed6jsnd37ffae9158f';
-        const apiHost = 'tiktok-video-no-watermark2.p.rapidapi.com';
-
-        try {
-            const response = await fetch(`https://${apiHost}/`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'x-rapidapi-key': apiKey, 'x-rapidapi-host': apiHost },
-                body: JSON.stringify({ url: urlInput, hd: "1" })
+    <script>
+        // LOGICA EM INGLES (O NAVEGADOR PRECISA DISSO)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js');
             });
-
-            const data = await response.json();
-
-            if (data && data.data && data.data.play) {
-                loading.classList.add('hidden');
-                resDiv.classList.remove('hidden');
-                resDiv.innerHTML = `
-                    <div class="bg-red-600/5 border border-red-600/20 p-10 rounded-[40px] pulse-red">
-                        <p class="text-green-500 font-black mb-5 uppercase text-lg italic text-center">✅ Vídeo Pronto!</p>
-                        
-                        <!-- BOTAO REAL COM GATILHO DE ANUNCIO -->
-                        <a href="${data.data.play}" 
-                           onclick="window.open('https://omg10.com/4/10781852', '_blank')" 
-                           target="_blank" 
-                           class="btn-main block w-full p-5 rounded-2xl font-black text-center text-lg decoration-none mb-3">
-                            📥 SALVAR AGORA MP4
-                        </a>
-
-                        <!-- BOTAO SERVIDOR 2 (DIRECT LINK PURO) -->
-                        <a href="https://omg10.com/4/10781852" target="_blank" class="block w-full p-3 rounded-2xl border border-white/20 text-gray-400 font-bold text-xs uppercase">
-                            ⚡ Baixar via Servidor HD 2
-                        </a>
-                    </div>
-                `;
-            } else { throw new Error(); }
-        } catch (error) {
-            loading.classList.add('hidden');
-            alert('Erro ao processar. Tente o botão Servidor VIP abaixo.');
-        } finally {
-            btn.disabled = false;
-            btn.innerHTML = "BAIXAR AGORA";
         }
-    }
-</script>
+
+        async function baixarVideo() {
+            const urlInput = document.getElementById('urlInput').value.trim();
+            const resDiv = document.getElementById('resultado');
+            
+            if (!urlInput.includes('tiktok.com')) {
+                alert('⚠️ Link inválido!');
+                return;
+            }
+
+            const apiKey = '0369b029a8msh559b08a58024200p18eed6jsnd37ffae9158f';
+            const apiHost = 'tiktok-video-no-watermark2.p.rapidapi.com';
+
+            try {
+                const response = await fetch(`https://${apiHost}/`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'x-rapidapi-key': apiKey, 'x-rapidapi-host': apiHost },
+                    body: JSON.stringify({ url: urlInput, hd: "1" })
+                });
+                const data = await response.json();
+                if (data && data.data && data.data.play) {
+                    resDiv.classList.remove('hidden');
+                    resDiv.innerHTML = `<a href="${data.data.play}" target="_blank" class="btn-main block p-5 rounded-2xl text-center">📥 SALVAR MP4 HD</a>`;
+                }
+            } catch (e) { alert('Erro na API'); }
+        }
+    </script>
+</body>
+</html>
