@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Verificações de Propriedade -->
-    <meta name="p:domain_verify" content="d5b7f467663ae0a96199c322feb2994e"/>
+    <!-- Tag de Verificação do Google Search Console -->
     <meta name="google-site-verification" content="PnnwfCaod9KnTiUog4mh-TEVtmicycnJXoPPh4UUaMI" />
+    <!-- Verificação do Pinterest -->
+    <meta name="p:domain_verify" content="d5b7f467663ae0a96199c322feb2994e"/>
+    <!-- 1. VERIFICAÇÃO MONETAG -->
     <meta name="monetag" content="3bcfc9ba9946005f642237bc6ca929f4">
 
-    <!-- 1. GOOGLE ADSENSE -->
+    <!-- 2. GOOGLE ADSENSE -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4898368878041703" crossorigin="anonymous"></script>
 
-    <!-- 2. GOOGLE ANALYTICS (TAG: G-89HXCVKFTX) -->
+    <!-- 3. GOOGLE ANALYTICS (TAG: G-89HXCVKFTX) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-89HXCVKFTX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -18,37 +20,58 @@
       gtag('config', 'G-89HXCVKFTX');
     </script>
 
-    <!-- 3. VERCEL SPEED INSIGHTS (INSTALADO) -->
+    <!-- 4. VERCEL SPEED INSIGHTS -->
     <script>
       window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/speed-insights/script.js"></script>
 
-    <!-- 4. MONETAG VIGNETTE -->
+    <!-- 5. MONETAG VIGNETTE/ON-CLICK -->
     <script src="https://quge5.com/88/tag.min.js" data-zone="223395" async data-cfasync="false"></script>
-
-    <!-- 5. VERCEL SPEED INSIGHTS -->
-    <script>
-      window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/speed-insights/script.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>SnapNoMark - Baixar Vídeo do TikTok Sem Marca d'Água HD</title>
     
+    <title>SnapNoMark - Baixar Vídeo do TikTok Sem Marca d'Água HD</title>
+    <meta name="description" content="O melhor downloader de TikTok online. Baixe vídeos sem marca d'água em HD de forma rápida, gratuita e ilimitada. SnapNoMark oficial.">
+    <meta name="keywords" content="baixar video tiktok, snapnomark, sem marca d'agua, download tiktok mp4, tirar logo tiktok">
+
+    <!-- JSON-LD FAQ PARA GOOGLE SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Como baixar vídeo do TikTok sem marca d'água?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Basta copiar o link do vídeo no TikTok, colar na barra de busca do SnapNoMark e clicar em baixar. O processo é automático e gratuito."
+        }
+      }, {
+        "@type": "Question",
+        "name": "O SnapNoMark é gratuito?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim, o SnapNoMark é uma ferramenta 100% gratuita e ilimitada para todos os usuários."
+        }
+      }]
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
         :root { --red: #ff0000; --dark: #050505; --gray: #0f0f0f; }
         body { background: var(--dark); color: white; font-family: 'Inter', sans-serif; margin: 0; scroll-behavior: smooth; }
-        .neon-border { border: 1px solid var(--red); box-shadow: 0 0 25px rgba(255, 0, 0, 0.3); }
-        .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(15px); }
-        .btn-main { background: var(--red); color: white !important; font-weight: 900; text-transform: uppercase; transition: 0.3s; border: none; cursor: pointer; }
-        .btn-main:hover { transform: scale(1.02); box-shadow: 0 0 30px var(--red); }
+        .neon-border { border: 1px solid var(--red); box-shadow: 0 0 25px rgba(255, 0, 0, 0.2); }
+        .glass-card { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .btn-main { background: var(--red); color: white !important; font-weight: 900; text-transform: uppercase; transition: 0.3s; box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); border: none; cursor: pointer; }
+        .btn-main:hover { transform: scale(1.02); box-shadow: 0 0 30px rgba(255, 0, 0, 0.6); }
         .pulse-red { animation: pulse-red 2s infinite; }
         @keyframes pulse-red { 0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(255, 0, 0, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); } }
+        .step-number { background: var(--red); width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; margin-bottom: 15px; font-size: 14px; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
@@ -56,40 +79,112 @@
     <!-- 6. MONETAG SMART TAG -->
     <script src="https://alwingulla.com/act/files/tag.min.js?z=10781852" data-cfasync="false" async></script>
 
-    <nav class="p-5 border-b border-gray-900 bg-black/90 sticky top-0 z-50 flex justify-between items-center px-8">
-        <h1 class="text-2xl font-black text-red-600 italic tracking-tighter uppercase">SnapNoMark</h1>
-        <div class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-green-500 rounded-full animate-ping"></span>
-            <span class="text-[9px] font-bold uppercase text-gray-400 tracking-widest text-center">Server HD Ativo</span>
+    <nav class="p-5 border-b border-gray-900 bg-black/90 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-black text-red-600 italic tracking-tighter uppercase">SnapNoMark</h1>
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-ping"></span>
+                <span class="text-[9px] font-bold uppercase text-gray-400 tracking-widest">Server Online</span>
+            </div>
         </div>
     </nav>
 
     <main class="container mx-auto px-6 py-12 text-center max-w-lg flex-grow">
-        <h2 class="text-4xl font-black mb-2 uppercase leading-tight">TikTok <span class="text-red-600">HD</span></h2>
-        <p class="text-gray-400 text-sm mb-10 font-medium italic text-center">Rápido, Grátis e Sem Marca d'Água.</p>
+        <h2 class="text-4xl font-black mb-3 uppercase leading-tight">TikTok <span class="text-red-600">HD</span></h2>
+        <p class="text-gray-500 text-sm mb-10 font-medium italic">Download sem marca d'água rápido e grátis.</p>
 
-        <div class="glass-card p-10 rounded-[40px] neon-border text-center">
-            <input type="text" id="urlInput" placeholder="Cole o link do TikTok aqui..." 
-                class="w-full bg-black border-2 border-gray-800 p-5 rounded-2xl outline-none focus:border-red-600 text-white mb-6 text-center">
-            <button onclick="baixarVideo()" id="btnAction" class="w-full btn-main p-5 rounded-2xl text-xl shadow-2xl">BAIXAR AGORA</button>
+        <div class="glass-card p-10 rounded-[40px] neon-border">
+            <input type="text" id="urlInput" placeholder="Cole o link do TikTok aqui..." class="w-full bg-black border-2 border-gray-800 p-5 rounded-2xl outline-none focus:border-red-600 text-white mb-5 text-center transition-all">
+            <button onclick="baixarVideo()" id="btnAction" class="w-full btn-main p-5 rounded-2xl text-xl">BAIXAR AGORA</button>
         </div>
 
         <div id="loading" class="mt-10 hidden text-center">
             <div class="animate-spin rounded-full h-12 w-12 border-b-4 border-red-600 mx-auto"></div>
-            <p class="text-red-500 font-black mt-4 uppercase text-[10px] tracking-widest">Processando vídeo...</p>
+            <p class="text-red-500 font-black mt-4 uppercase text-[10px] tracking-widest">Processando Vídeo...</p>
         </div>
 
         <div id="resultado" class="mt-10 hidden"></div>
     </main>
 
-    <footer class="mt-auto border-t border-red-900/30 bg-black py-10 px-8 text-center">
-        <h3 class="text-2xl font-black text-red-600 italic uppercase mb-2">SnapNoMark</h3>
-        <p class="text-[10px] text-gray-700 uppercase tracking-[0.3em]">&copy; 2024 - Tecnologia Oficial de Extração Digital</p>
+    <section class="bg-black/50 py-16 px-6 border-y border-gray-900">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-8 glass-card rounded-3xl border-none">
+                <i class="fas fa-bolt text-red-600 text-4xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2 text-white uppercase">Snap Cloud</h3>
+                <p class="text-gray-500 text-xs">Processamento ultrarrápido via servidores dedicados.</p>
+            </div>
+            <div class="p-8 glass-card rounded-3xl border-none">
+                <i class="fas fa-shield-alt text-red-600 text-4xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2 text-white uppercase">Privacidade</h3>
+                <p class="text-gray-500 text-xs">Downloads 100% anônimos. Nenhum dado é coletado.</p>
+            </div>
+            <div class="p-8 glass-card rounded-3xl border-none">
+                <i class="fas fa-gem text-red-600 text-4xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2 text-white uppercase">MP4 HD</h3>
+                <p class="text-gray-500 text-xs">Qualidade original preservada sem marcas d'água.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUIA PASSO A PASSO -->
+    <section class="py-16 px-6 max-w-4xl mx-auto">
+        <h3 class="text-2xl font-black text-center mb-12 uppercase italic underline decoration-red-600 pb-2">Como usar o SnapNoMark</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
+            <div class="flex flex-col gap-2">
+                <div class="step-number">1</div>
+                <h4 class="font-bold text-white uppercase text-sm">Copie o link</h4>
+                <p class="text-gray-500 text-xs">No TikTok, clique em 'Compartilhar' e 'Copiar Link'.</p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="step-number">2</div>
+                <h4 class="font-bold text-white uppercase text-sm">Cole no site</h4>
+                <p class="text-gray-500 text-xs">Acesse snapnomark.vercel.app e cole no campo acima.</p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="step-number">3</div>
+                <h4 class="font-bold text-white uppercase text-sm">Download</h4>
+                <p class="text-gray-500 text-xs">Clique em baixar e salve o MP4 limpo na galeria.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER COM WIKI LINKS -->
+    <footer class="mt-auto border-t border-red-900/30 bg-black/90 py-10 px-6">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div class="space-y-3">
+                <h3 class="text-xl font-black text-red-600 italic tracking-tighter uppercase">SnapNoMark</h3>
+                <p class="text-[10px] text-gray-500 leading-relaxed uppercase tracking-widest">
+                    A tecnologia líder em extração de mídia digital sem marca d'água. 100% gratuito.
+                </p>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs uppercase tracking-widest">Protocolo</h4>
+                <ul class="text-[10px] text-gray-400 space-y-2 uppercase">
+                    <li><a href="https://github.com/tiacardo/snapnomark.vercell2/wiki" class="hover:text-red-500 transition">Manual de Uso</a></li>
+                    <li><a href="https://github.com/tiacardo/snapnomark.vercell2/wiki/Termos-e-Regras" class="hover:text-red-500 transition">Termos e Regras</a></li>
+                    <li><a href="https://github.com/tiacardo/snapnomark.vercell2/wiki/Suporte-e-FAQ" class="hover:text-red-500 transition">Suporte & FAQ</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs uppercase tracking-widest text-red-500">Status do Sistema</h4>
+                <div class="flex items-center justify-center md:justify-start gap-2">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-ping"></span>
+                    <span class="text-[10px] text-green-500 font-bold uppercase">Servidores Online HD</span>
+                </div>
+                <p class="text-[9px] text-gray-600 italic">Vercel v.2.1.0 - Snap Activated</p>
+            </div>
+        </div>
+        <div class="max-w-4xl mx-auto mt-10 pt-6 border-t border-white/5 text-center">
+            <p class="text-[9px] text-gray-600 uppercase tracking-widest">&copy; 2024 SnapNoMark - Todos os direitos reservados. Não somos o TikTok.</p>
+        </div>
     </footer>
 
     <script>
+        // REGISTRO SERVICE WORKER (PUSH NOTIFICATIONS)
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => { navigator.serviceWorker.register('/sw.js'); });
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(err => console.log('SW Fail'));
+            });
         }
 
         async function baixarVideo() {
@@ -99,11 +194,13 @@
             const loading = document.getElementById('loading');
 
             if (!urlInput.includes('tiktok.com')) {
-                alert('⚠️ Link inválido!');
+                alert('⚠️ Cole um link do TikTok válido!');
                 return;
             }
 
-            btn.disabled = true; btn.innerHTML = "PROCESSANDO...";
+            gtag('event', 'download_attempt', { 'url': urlInput });
+
+            btn.disabled = true; btn.innerHTML = "AGUARDE...";
             loading.classList.remove('hidden'); resDiv.innerHTML = "";
 
             const apiKey = '0369b029a8msh559b08a58024200p18eed6jsnd37ffae9158f';
@@ -122,15 +219,17 @@
                     loading.classList.add('hidden');
                     resDiv.classList.remove('hidden');
                     resDiv.innerHTML = `
-                        <div class="bg-red-600/5 border border-red-600/20 p-10 rounded-[40px] pulse-red text-center">
-                            <p class="text-green-500 font-black mb-4 uppercase text-lg italic">✅ VÍDEO PRONTO!</p>
+                        <div class="bg-red-600/5 border border-red-600/20 p-10 rounded-[40px] pulse-red text-center animate-bounce">
+                            <p class="text-green-500 font-black mb-5 uppercase text-lg italic text-center">✅ Vídeo Pronto!</p>
                             <a href="${data.data.play}" 
                                onclick="window.open('https://omg10.com/4/10781852', '_blank')" 
                                target="_blank" 
                                class="btn-main block w-full p-5 rounded-2xl font-black text-white text-lg decoration-none">
-                                📥 SALVAR VÍDEO AGORA
+                                📥 SALVAR VÍDEO MP4 HD
                             </a>
+                            <p class="text-[9px] text-gray-600 mt-4 italic text-center">Download aberto em nova aba. Apoie nosso site!</p>
                         </div>`;
+                    gtag('event', 'download_success');
                 } else { throw new Error(); }
             } catch (error) {
                 loading.classList.add('hidden');
