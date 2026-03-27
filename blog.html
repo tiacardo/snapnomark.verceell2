@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- LOGO FAVICON -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%23ffffff;stop-opacity:1' /><stop offset='100%' style='stop-color:%23a1a1a1;stop-opacity:1' /></linearGradient></defs><path d='M50 5 L90 50 L50 95 L10 50 Z' fill='none' stroke='url(%23grad)' stroke-width='8'/><path d='M35 35 L65 35 L35 65 L65 65' fill='none' stroke='url(%23grad)' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/></svg>">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog SnapNoMark - Dicas e Tutoriais</title>
-    
-    <!-- MONETAG & ANALYTICS -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4898368878041703" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-89HXCVKFTX"></script>
     <script>
@@ -15,83 +11,43 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date()); gtag('config', 'G-89HXCVKFTX');
     </script>
-
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <style>
         :root { --red: #ff0000; --dark: #050505; --gray: #111; }
         body { background: var(--dark); color: white; font-family: 'Inter', sans-serif; margin: 0; }
-        .blog-card { background: var(--gray); border: 1px solid #222; transition: 0.3s; border-radius: 20px; overflow: hidden; }
-        .blog-card:hover { border-color: var(--red); }
-        .btn-cta { background: var(--red); color: white !important; font-weight: bold; border-radius: 10px; display: block; text-align: center; padding: 12px; transition: 0.3s; }
-        .btn-cta:hover { transform: scale(1.02); box-shadow: 0 0 15px var(--red); }
-        .affiliate-card { background: linear-gradient(135deg, #1a1a1a, #000); border: 2px solid #ff000055; position: relative; }
-        .badge-premium { position: absolute; top: -10px; right: 20px; background: #ff0000; color: white; padding: 4px 12px; border-radius: 20px; font-size: 10px; font-weight: 900; text-transform: uppercase; }
+        .blog-card { background: var(--gray); border: 1px solid #222; transition: 0.3s; border-radius: 20px; padding: 20px; }
+        .btn-cta { background: var(--red); color: white !important; font-weight: bold; border-radius: 10px; display: block; text-align: center; padding: 12px; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
-
-    <!-- NAV -->
-    <nav class="p-5 border-b border-gray-900 bg-black/90 sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2">
-                <svg width="30" height="30" viewBox="0 0 100 100">
-                    <defs><linearGradient id="sGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#ffffff" /><stop offset="100%" style="stop-color:#808080" /></linearGradient></defs>
-                    <path d="M50 10 L85 50 L50 90 L15 50 Z" fill="none" stroke="url(#sGrad)" stroke-width="6" />
-                    <path d="M35 35 H65 L35 65 H65" fill="none" stroke="url(#sGrad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <h1 class="text-xl font-black text-red-600 uppercase">SnapNoMark</h1>
-            </a>
-            <a href="index.html" class="text-[10px] font-bold uppercase bg-red-600 px-4 py-2 rounded-full">App Principal</a>
-        </div>
+    <nav class="p-5 border-b border-gray-900 bg-black/90 flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-2">
+            <svg width="30" height="30" viewBox="0 0 100 100"><defs><linearGradient id="sGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#ffffff" /><stop offset="100%" style="stop-color:#808080" /></linearGradient></defs><path d="M50 10 L85 50 L50 90 L15 50 Z" fill="none" stroke="url(#sGrad)" stroke-width="6" /><path d="M35 35 H65 L35 65 H65" fill="none" stroke="url(#sGrad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            <span class="text-xl font-black text-red-600 uppercase">SnapNoMark</span>
+        </a>
     </nav>
 
-    <main class="container mx-auto px-6 py-12 max-w-5xl flex-grow">
-        
-        <!-- CARD DE VENDA AFILIADO (O Pulo do Gato) -->
-        <section class="affiliate-card p-8 rounded-[35px] mb-16 text-center shadow-2xl">
-            <div class="badge-premium">Recomendação da Equipe</div>
-            <i class="fas fa-video text-red-600 text-4xl mb-4"></i>
-            <h2 class="text-2xl font-black mb-3 italic">DOMINE A EDIÇÃO NO CAPCUT</h2>
-            <p class="text-gray-400 text-sm max-w-lg mx-auto mb-6">Você já aprendeu a baixar em HD. Agora aprenda a transformar seus vídeos em verdadeiras máquinas de visualizações e vendas!</p>
-            <!-- COLE SEU LINK DA KIWIFY ABAIXO NO HREF -->
-            <a href="SEU_LINK_KIWIFY_AQUI" target="_blank" class="bg-white text-black font-black py-4 px-10 rounded-2xl uppercase inline-block hover:bg-red-600 hover:text-white transition">Quero ser um Criador Pro</a>
-        </section>
-
-        <div class="text-center mb-10">
-            <h2 class="text-3xl font-black mb-2 uppercase italic text-red-600">Central do Criador</h2>
-            <p class="text-gray-500 text-sm">Dicas gratuitas para dominar o algoritmo.</p>
+    <main class="container mx-auto px-6 py-12 max-w-5xl">
+        <h2 class="text-3xl font-black mb-10 uppercase text-center">Central do Criador</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <article class="blog-card">
+                <h3 class="font-bold text-lg mb-4">Repost no Reels sem Perda de Alcance</h3>
+                <a href="artigos.html#reposts" class="btn-cta text-[10px] uppercase">Ler Tutorial</a>
+            </article>
+            <article class="blog-card">
+                <h3 class="font-bold text-lg mb-4">Salvar na Galeria do iPhone</h3>
+                <a href="artigos.html#iphone" class="btn-cta text-[10px] uppercase">Ler Tutorial</a>
+            </article>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <article class="blog-card p-6 flex flex-col">
-                <span class="text-[10px] text-red-500 font-bold uppercase mb-2">Algoritmo</span>
-                <h3 class="font-bold text-lg mb-4 leading-tight">Como Repostar TikTok no Reels sem Perder Alcance</h3>
-                <p class="text-gray-400 text-xs mb-6 flex-grow">O Instagram reduz sua entrega se houver logos. Saiba como evitar...</p>
-                <a href="artigos.html#reposts" class="btn-cta text-[10px] uppercase">Abrir Tutorial</a>
-            </article>
-
-            <article class="blog-card p-6 flex flex-col">
-                <span class="text-[10px] text-red-500 font-bold uppercase mb-2">iPhone</span>
-                <h3 class="font-bold text-lg mb-4 leading-tight">Como salvar TikTok na galeria do iOS (Passo a passo)</h3>
-                <p class="text-gray-400 text-xs mb-6 flex-grow">Aprenda o truque do Safari para salvar vídeos sem marca d'água...</p>
-                <a href="artigos.html#iphone" class="btn-cta text-[10px] uppercase">Abrir Tutorial</a>
-            </article>
-
-            <article class="blog-card p-6 flex flex-col">
-                <span class="text-[10px] text-red-500 font-bold uppercase mb-2">Canais Dark</span>
-                <h3 class="font-bold text-lg mb-4 leading-tight">3 Ferramentas indispensáveis para o seu Canal Dark</h3>
-                <p class="text-gray-400 text-xs mb-6 flex-grow">Domine o YouTube com o arsenal completo de edição e download...</p>
-                <a href="artigos.html#ferramentas" class="btn-cta text-[10px] uppercase">Abrir Tutorial</a>
-            </article>
+        <!-- CARD DE VENDA (KIWIFY) -->
+        <div class="mt-20 p-1 bg-gradient-to-r from-red-600 to-purple-600 rounded-[30px]">
+            <div class="bg-black rounded-[28px] p-8 text-center">
+                <h3 class="text-xl font-bold mb-4">🚀 Quer viver de internet?</h3>
+                <p class="text-gray-400 text-sm mb-6">Conheça o método Creator Mobile e fature com seu celular.</p>
+                <a href="https://kiwify.app/HqOkmir?afid=5BWyhMw1" target="_blank" class="bg-white text-black px-8 py-3 rounded-xl font-black uppercase text-xs">Acessar Treinamento</a>
+            </div>
         </div>
     </main>
-
-    <footer class="p-10 border-t border-gray-900 text-center text-[10px] text-gray-700 uppercase tracking-widest bg-black">
-        <p class="font-bold text-red-600 mb-2">SnapNoMark Blog</p>
-        &copy; 2024 - Todos os direitos reservados.
-    </footer>
-
 </body>
 </html>
