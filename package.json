@@ -1,0 +1,23 @@
+{
+  "name": "snapnomark",
+  "version": "1.0.0",
+  "description": "SnapNoMark - TikTok Video Downloader HD without watermark",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiacardo/snapnomark.verceell2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiacardo/snapnomark.verceell2/issues"
+  },
+  "homepage": "https://github.com/tiacardo/snapnomark.verceell2#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
