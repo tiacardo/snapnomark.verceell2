@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- LOGO FAVICON (Ícone da aba) -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%23ffffff;stop-opacity:1' /><stop offset='100%' style='stop-color:%23a1a1a1;stop-opacity:1' /></linearGradient></defs><path d='M50 5 L90 50 L50 95 L10 50 Z' fill='none' stroke='url(%23grad)' stroke-width='8'/><path d='M35 35 L65 35 L35 65 L65 65' fill='none' stroke='url(%23grad)' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog SnapNoMark - Dicas de Faturamento e Edição</title>
     
+    <!-- 1. GOOGLE ADSENSE -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4898368878041703" crossorigin="anonymous"></script>
+
+    <!-- 2. GOOGLE ANALYTICS (G-89HXCVKFTX) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-89HXCVKFTX"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-89HXCVKFTX');</script>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     
     <style>
         /* TAG PARA DEIXAR IMAGENS NÍTIDAS (HD) */
         img {
-            image-rendering: -webkit-optimize-contrast; /* Para iPhone/Safari */
-            image-rendering: crisp-edges; /* Para Android/Chrome */
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
             width: 100%;
             height: auto;
             display: block;
@@ -40,7 +46,7 @@
                 <svg width="30" height="30" viewBox="0 0 100 100"><defs><linearGradient id="s" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#ffffff" /><stop offset="100%" style="stop-color:#808080" /></linearGradient></defs><path d="M50 10 L85 50 L50 90 L15 50 Z" fill="none" stroke="url(#s)" stroke-width="6" /><path d="M35 35 H65 L35 65 H65" fill="none" stroke="url(#s)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" /></svg>
                 <h1 class="text-xl font-black text-red-600 italic tracking-tighter uppercase">SnapNoMark</h1>
             </a>
-            <a href="index.html" class="text-[10px] font-bold uppercase bg-red-600 px-4 py-2 rounded-full text-white shadow-lg">Downloader HD</a>
+            <a href="index.html" class="text-[10px] font-bold uppercase bg-red-600 px-4 py-2 rounded-full text-white shadow-lg">App Principal</a>
         </div>
     </nav>
 
@@ -55,26 +61,49 @@
             <article class="blog-card p-8">
                 <span class="text-red-500 font-bold text-[10px] uppercase tracking-[0.2em] mb-4">Algoritmo</span>
                 <h3 class="text-xl font-bold mb-4 text-white">Repost no Reels sem Perda de Alcance</h3>
-                <p class="text-gray-400 text-sm mb-6">Descubra o segredo dos grandes perfis para manter a entrega alta.</p>
+                <p class="text-gray-400 text-sm mb-6 leading-relaxed">Descubra o segredo dos grandes perfis para manter a entrega alta removendo marcas d'água corretamente.</p>
                 <a href="artigos.html#reposts" class="mt-auto text-red-500 font-bold text-xs uppercase underline decoration-dotted">Ler Tutorial →</a>
             </article>
 
             <!-- BANNER 3: SAIA DO ZERO -->
             <div class="text-center">
-                <a href="https://kiwify.app/HqOkmir?afid=5BWyhMw1&src=blog-banner-top" target="_blank">
+                <a href="https://kiwify.app/HqOkmir?afid=5BWyhMw1&src=blog-banner-saia-zero" target="_blank">
                     <img src="https://i.ibb.co/Jw9w0JSd/image.jpg" class="banner-vip" alt="Saia do Zero">
                 </a>
-                <p class="text-[9px] text-gray-700 uppercase mt-4 tracking-widest">Patrocinado: Creator Mobile</p>
+                <p class="text-[9px] text-gray-700 uppercase mt-4 tracking-widest italic">Aprenda a faturar com seu celular</p>
             </div>
         </div>
 
         <!-- BANNER 2: EDIÇÃO DE ELITE (DESTAQUE CENTRAL) -->
-        <div class="my-20 text-center">
+        <div class="my-20 text-center bg-zinc-900/30 p-10 rounded-[40px] border border-white/5">
             <h3 class="text-red-600 font-black text-xs uppercase mb-6 tracking-[0.4em]">Treinamento em Destaque</h3>
-            <a href="https://kiwify.app/HqOkmir?afid=5BWyhMw1&src=blog-banner-mid" target="_blank">
-                <img src="https://i.ibb.co/RGhy2XC3/image.jpg" alt="Edição Elite" class="banner-vip max-w-md mx-auto">
+            <a href="https://kiwify.app/HqOkmir?afid=5BWyhMw1&src=blog-banner-mid-pro" target="_blank">
+                <img src="https://i.ibb.co/RGhy2XC3/image.jpg" alt="Edição Elite" class="banner-vip max-w-md mx-auto shadow-[0_0_50px_rgba(255,0,0,0.2)]">
             </a>
+            <p class="text-gray-500 text-xs mt-6 max-w-sm mx-auto">Domine a edição que viraliza e transforma seguidores em clientes.</p>
         </div>
 
         <!-- GRID 2 -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+             <article class="blog-card p-8">
+                <span class="text-red-500 font-bold text-[10px] uppercase tracking-[0.2em] mb-4">Negócios</span>
+                <h3 class="text-xl font-bold mb-4 text-white uppercase italic">Canais Dark Mobile</h3>
+                <p class="text-gray-400 text-sm mb-6 leading-relaxed">Como estruturar canais no YouTube e TikTok para faturar em dólar sem precisar aparecer.</p>
+                <a href="artigos.html#darkchannel" class="mt-auto text-red-500 font-bold text-xs uppercase underline decoration-dotted">Ver Método →</a>
+            </article>
+            <article class="blog-card p-8 text-center border-red-600/20">
+                <h3 class="text-xl font-bold mb-4 text-white uppercase italic">Viver de Vídeos</h3>
+                <!-- BANNER 1: VIVER DE VÍDEOS -->
+                <a href="https://kiwify.app/HqOkmir?afid=5BWyhMw1&src=blog-card-viver-vid" target="_blank">
+                    <img src="https://i.ibb.co/rGBb9Cwb/image.jpg" class="banner-vip mb-4" alt="Viver de Vídeos">
+                </a>
+                <p class="text-[9px] text-gray-500 uppercase tracking-widest">Clique para conhecer o curso completo</p>
+            </article>
+        </div>
+    </main>
+
+    <footer class="p-10 border-t border-gray-900 text-center text-[10px] text-gray-700 uppercase tracking-widest bg-black">
+        &copy; 2024 SnapNoMark PRO - Inteligência em Conteúdo Digital
+    </footer>
+</body>
+</html>
