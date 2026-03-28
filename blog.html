@@ -12,6 +12,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <style>
+        /* TAG PARA DEIXAR IMAGENS NÍTIDAS (HD) */
+        img {
+            image-rendering: -webkit-optimize-contrast; /* Para iPhone/Safari */
+            image-rendering: crisp-edges; /* Para Android/Chrome */
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+        }
         :root { --red: #ff0000; --dark: #050505; --gray: #111; }
         body { background: var(--dark); color: white; font-family: 'Inter', sans-serif; margin: 0; }
         .blog-card { background: var(--gray); border: 1px solid #222; transition: 0.3s; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; height: 100%; }
